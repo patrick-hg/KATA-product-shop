@@ -1,0 +1,15 @@
+   #######################
+   ###  Features #########
+   #######################
+
+Critical
+
+Urgent
+- in TaskItem, display priority value with a flag color (Red, Orange, Yellow, white)
+- in TaskManagement, add a priority picker component with a value to pick (critical, urgent, needed, normal)
+- in TaskManagement, add a category picker component that display categories in a list.
+
+Needed
+
+Normal
+- in the settings, add a theme picker, and switch theme according to user preference, also save user preference in DB
