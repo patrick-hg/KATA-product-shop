@@ -1,3 +1,5 @@
+.idea/*
+.idea/vcs.xml
 back/target/*
 back/target/kata-product-trial-0.0.1-SNAPSHOT.jar
 back/target/kata-product-trial-0.0.1-SNAPSHOT.jar.original
