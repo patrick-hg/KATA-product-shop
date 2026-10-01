@@ -13,6 +13,7 @@ export default function Products({products, cartItems, toggleToCart}) {
                 <div>
                     <h3>Liste des produits</h3>
                 </div>
+                {/* remove that useless button later, it's just for demonstration */}
                 <div className="btn-product">
                     Créer produit
                 </div>

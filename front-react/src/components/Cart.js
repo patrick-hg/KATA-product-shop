@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles.css';
 import ProductCard from "./ProductCard";
+import Payment from "./Payment";
 
 
 export default function Cart({products, cartItems, toggleToCart}) {
@@ -15,6 +16,9 @@ export default function Cart({products, cartItems, toggleToCart}) {
                         return <ProductCard key={id} product={product} toggleToCart={toggleToCart} isInCart={true} />
                     })
                 }
+            </div>
+            <div className="cart-payment">
+                <Payment items={cartItems.map(id => products.find(product => product.id === id))} />
             </div>
         </div>
     );

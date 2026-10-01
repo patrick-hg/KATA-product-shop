@@ -27,30 +27,29 @@ function App() {
     setCartItems(previousState => {
       console.log('toggleCart: previousState', previousState);
       return previousState.includes(productId) ? previousState.filter(id => id !== productId) : [...previousState, productId]
-    }
-    )
+    });
   }
 
   return (
     <div className="App">
       <div className='container'>
-      
         <Router>
+
           <Header cartItemCounter={cartItems.length} />
-          
           <div className='middle-container'>
             <Menu />
 
             <div className='router'>
               <Routes>
-                <Route path='/' element={<Products products={products} cartItems={cartItems} toggleToCart={toggleToCart}/>}></Route>
+                <Route path='/' element={<Products products={products} cartItems={cartItems} toggleToCart={toggleToCart}/>}>
+                </Route>
                 <Route path='/cart' element={<Cart products={products} cartItems={cartItems} toggleToCart={toggleToCart}/>}></Route>
               </Routes>
             </div>
           </div>
+          <Footer />
+
         </Router>
-        
-        <Footer />
       </div>
     </div>
   );
